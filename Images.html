@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Review Blog</title>
+    <link rel="stylesheet" href="images.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo">
+            <img src="image/logo.png" alt="Game Review Hub Logo" >
+            </a>
+        </div>
+        
+        <h1>Images</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ReadMore.html">Blog</a></li>
+                <li><a href="About us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar1">
+        <h2><strong> GameCrit </strong></h2>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="Archives.html">Archives</a></li>
+            <li><a href="Images.html">Images</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="container1">
+        <img src="image/Fatal Frame.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://upload.wikimedia.org/wikipedia/en/a/af/Fatal_Frame_II_-_Crimson_Butterfly.jpg" class="link">Tecmo, Fatal Frame II, Promotional image.</a>
+    </div>
+
+    <div class="container1">
+        <img src="image/gta5.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1741381848" class="link">RocstarGames,GTA 5, Promotional image. </a>
+    </div>
+
+    <div class="container1">
+        <img src="image/LSD.png" alt="Sample Image" class="image" id="image">
+        <a href="https://upload.wikimedia.org/wikipedia/en/a/a9/LSD_Coverart.png" class="link">Asmik Ace, LSD: Dream Emulator, Promotional image. </a>
+    </div>
+
+    <div class="container1">
+        <img src="image/Persona5.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/03/persona-5-royal-cover-e1584925973620.jpg" class="link">Atlus, Persona 5 Royal, Promotional image</a>
+    </div>
+
+    <div class="container1">
+        <img src="image/Silent hill.jpeg" alt="Sample Image" class="image" id="image">
+        <a href="https://en.wikipedia.org/wiki/Silent_Hill:_The_Short_Message" class="link">Konami. Silent Hill: The Short Message. Promotional image, 2024</a>
+    </div>
+
+    <div class="container1">
+        <img src="image/stalker.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://www.imdb.com/title/tt0936494/mediaviewer/rm3115574784/" class="link">GSC Game World. S.T.A.L.K.E.R.: Shadow of Chernobyl, Promotional image,</a>
+    </div>
+
+    <div class="container1">
+        <img src="image/starcraft.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://play.ntop.tv/uploads/posts/2022-07/medium/1659272850_starcraft_remastered_starcraft_cartooned_2017.jpg" class="link">Blizzard Studios, Starcraft Remastered, Promotional image </a>
+    </div>
+
+    <div class="container1">
+        <img src="image/stronghold.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://howlongtobeat.com/games/131648_Stronghold_Definitive_Edition.jpg" class="link">FireFly Studios, Stronghold: Definitive Edition, Promotional image. </a>
+    </div>
+
+    <div class="container1">
+        <img src="image/the last of us.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://www.justpushstart.com/wp-content/uploads/2014/08/res_751911e58d5f561cf3458aad33f7bc8f.jpg" class="link">Naughty Dog. The Last of Us Remastered. Promotional image, Sony Computer Entertainment, 2014.</a>
+    </div>
+
+    <div class="container1">
+        <img src="image/valorant.jpg" alt="Sample Image" class="image" id="image">
+        <a href="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-b7a9ac9bd8164de332a5fc9a2ad73f45" class="link">Riot Games, Valorant, Promotion Image </a>
+    </div>
+
+
+
+
+    <div id="modal" class="modal">
+        <span class="close" id="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script>
+        const image = document.getElementById('image');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-image');
+        const close = document.getElementById('close');
+
+        image.onclick = function() {
+            modal.style.display = "block";
+            modalImage.src = this.src;
+        }
+
+        close.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+
+    
+
+
+
+
+</body>

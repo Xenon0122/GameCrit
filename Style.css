@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Sidebar Styling */
+.sidebar1 {
+    position: fixed;
+    left: -370px;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    background: #333;
+    color: rgb(60, 255, 0);
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.sidebar1:hover {
+    left: 0;
+}
+
+.sidebar1 h1, .sidebar1 p {
+    text-align: center;
+}
+
+.sidebar1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar1 a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.sidebar1 a:hover {
+    color: #ffcc00;
+}
+
+.sidebar1::before {
+    content: "☰";
+    position: absolute;
+    right: -30px;
+    top: 15px;
+    background: #ffcc00;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Header Styling */
+header {
+    background-color: rgb(51, 51, 51);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffcc00;
+    position: relative;
+    top: 40px; /* Adjust this value as needed */
+    font-size: 40px; /* Adjust font size if necessary */
+    text-align: center;
+    left: -200px;
+}
+
+header h5 {
+    margin: 0;
+    color: #ffffff;
+    position: relative;
+    top: -10px; 
+    font-size: 20px;
+    text-align: center;
+    left: 340px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+.blog-posts {
+    width: 60%;
+    max-width: 900px;
+}
+
+.blog-posts article {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.blog-posts article img {
+    width: 80%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.blog-posts article h2 {
+    font-size: 1.8rem;
+}
+
+.blog-posts article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Background Blur Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/bg.jpg') no-repeat center center/cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Comment Box Styling */
+.container5 {
+    background-color: #222; /* Matches the main content */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners like blog posts */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    color: #ffffff; /* Text color to match the theme */
+    width: 60%;
+    max-width: 900px; /* Keeps it consistent */
+    text-align: left; /* Align text properly */
+    margin: 20px auto; /* Centers it */
+}
+
+.commentbox {
+    display: flex;
+    padding: 10px;
+}
+
+.commentbox img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.commentinput input {
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid blue;
+    width: 95%;
+    margin-top: 2%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    padding: 5px 10px;
+    background: lightgrey;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons button.abled {
+    background: blue;
+    color: #fff;
+}
+
+/* Policy Section */
+.policy {
+    margin: 20px 0;
+    font-size: 0.8em;
+    color: #808080;
+}
+
+.policy a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+.date {
+    color: #808080;
+    font-size: 0.8em;
+}
+.comment img {
+    width: 50px;  /* Adjust as needed */
+    height: 50px; /* Keeps it square */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures it looks good */
+}
+.avatar {
+    width: 40px;  /* Adjust as needed */
+    height: 40px; /* Keep it the same as avatar */
+    border-radius: 50%; /* Makes it round */
+    object-fit: cover; /* Ensures proper scaling */
+}

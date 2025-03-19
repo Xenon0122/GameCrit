@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    background: url('image/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}   
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    backdrop-filter: blur(10px); /* Adjust blur intensity */
+    z-index: -1;
+}
+
+
+.sidebar1 {
+    position: fixed;
+    left: -370px; 
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    background: #333;
+    color: rgb(60, 255, 0);
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Change to a more modern font */
+    font-size: 18px; /* Increase font size */
+    line-height: 1; /* Improve line height for readability */
+}
+
+.sidebar1:hover {
+    left: 0;
+}
+
+.sidebar1 h2 {
+    font-size: 24px; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+.sidebar1 p {
+    margin-bottom: 20px; /* Space below the paragraph */
+    text-align: center; /* Center the paragraph text */
+}
+
+.sidebar1 ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.sidebar1 li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.sidebar1 a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link fill the width */
+    padding: 10px 0; /* Add vertical padding for better click area */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.sidebar1 a:hover {
+    color: #ffcc00; /* Change color on hover for feedback */
+}
+
+.sidebar1::before {
+    content: "☰";
+    position: absolute;
+    right: -30px;
+    top: 15px;
+    background: #ffcc00;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(51, 51, 51, 0.7); /* 0.7 makes it slightly transparent */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 180px; 
+    height: auto;
+    
+}
+
+header h1 {
+    margin: 0;
+    color: #ffcc00;
+    position: relative;
+    top: 30px; /* Adjust this value as needed */
+    font-size: 40px; /* Adjust font size if necessary */
+    text-align: center;
+    left: 20px;
+}
+header h5 {
+    margin: 0;
+    color: #ffffff;
+    position: relative;
+    top: -10px; 
+    font-size: 20px;
+    text-align: center;
+    left: 340px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/bg.jpg') no-repeat center center/cover;
+    filter: blur(6px); /* Adjust blur intensity */
+    z-index: -1; /* Keeps it behind all content */
+}
+
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.image {
+    width: 500px;
+    height: auto;
+    transition: transform 0.1s ease-in-out;
+    height: auto;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* X-offset, Y-offset, blur-radius, shadow color */
+    border-radius: 30px; /* Optional: Adds rounded corners */
+}
+
+.image:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Link Styling */
+.link {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    display: inline-block; /* Makes the box fit the text */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Space around text */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
